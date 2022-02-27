@@ -1,0 +1,144 @@
+$date
+	Mon Sep 21 13:41:16 2015
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module simple_tb $end
+$var wire 5 ! amount [4:0] $end
+$var reg 16 " in [15:0] $end
+$scope module U_numOfBit $end
+$var wire 16 # dicisionArray [15:0] $end
+$var wire 16 $ in [15:0] $end
+$var wire 16 % oneHotArray [15:0] $end
+$var reg 5 & amount [4:0] $end
+$var integer 32 ' i [31:0] $end
+$var integer 32 ( tmp [31:0] $end
+$scope begin genblk1 $end
+$upscope $end
+$scope begin genblk01 $end
+$upscope $end
+$scope begin genblk001 $end
+$upscope $end
+$scope begin genblk0001 $end
+$upscope $end
+$scope begin genblk00001 $end
+$upscope $end
+$scope begin genblk000001 $end
+$upscope $end
+$scope begin genblk0000001 $end
+$upscope $end
+$scope begin genblk00000001 $end
+$upscope $end
+$scope begin genblk000000001 $end
+$upscope $end
+$scope begin genblk0000000001 $end
+$upscope $end
+$scope begin genblk00000000001 $end
+$upscope $end
+$scope begin genblk000000000001 $end
+$upscope $end
+$scope begin genblk0000000000001 $end
+$upscope $end
+$scope begin genblk00000000000001 $end
+$upscope $end
+$scope begin genblk000000000000001 $end
+$upscope $end
+$scope begin genblk0000000000000001 $end
+$upscope $end
+$scope begin genblk2 $end
+$upscope $end
+$scope begin genblk02 $end
+$upscope $end
+$scope begin genblk002 $end
+$upscope $end
+$scope begin genblk0002 $end
+$upscope $end
+$scope begin genblk00002 $end
+$upscope $end
+$scope begin genblk000002 $end
+$upscope $end
+$scope begin genblk0000002 $end
+$upscope $end
+$scope begin genblk00000002 $end
+$upscope $end
+$scope begin genblk000000002 $end
+$upscope $end
+$scope begin genblk0000000002 $end
+$upscope $end
+$scope begin genblk00000000002 $end
+$upscope $end
+$scope begin genblk000000000002 $end
+$upscope $end
+$scope begin genblk0000000000002 $end
+$upscope $end
+$scope begin genblk00000000000002 $end
+$upscope $end
+$scope begin genblk000000000000002 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1 (
+b10001 '
+bx &
+bx %
+bx $
+bx #
+bx "
+bx !
+$end
+#50
+b0 &
+b0 !
+b10001 '
+b0 %
+b0 "
+b0 $
+b1111111111111111 #
+#100
+b1100 &
+b1100 !
+b10001 '
+b100000000000 %
+b100011111111 "
+b100011111111 $
+b1111000000000000 #
+#150
+b10000 &
+b10000 !
+b10001 '
+b0 #
+b1000000000000000 %
+b1000001011011111 "
+b1000001011011111 $
+#200
+b1101 &
+b1101 !
+b10001 '
+b1110000000000000 #
+b1000000000000 %
+b1000011111111 "
+b1000011111111 $
+#250
+b1010 &
+b1010 !
+b10001 '
+b1000000000 %
+b1111110000000000 #
+b1011111111 "
+b1011111111 $
+#300
+b1111 &
+b1111 !
+b10001 '
+b100000000000000 %
+b1000000000000000 #
+b100010011111111 "
+b100010011111111 $
+#350

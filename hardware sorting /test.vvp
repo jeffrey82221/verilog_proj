@@ -1,0 +1,118 @@
+#! /usr/local/bin/vvp
+:ivl_version "0.9.7 " "(v0_9_7-13-gbf08fcd)";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x7f811bd0a5d0 .scope module, "simple_tb" "simple_tb" 2 1;
+ .timescale 0 0;
+v0x7f811bd1f4d0_0 .var "in1", 7 0;
+v0x7f811bd1f550_0 .var "in2", 7 0;
+v0x7f811bd1f5d0_0 .var "in3", 7 0;
+v0x7f811bd1f690_0 .var "in4", 7 0;
+v0x7f811bd1f750_0 .net "out1", 7 0, L_0x7f811bd20310; 1 drivers
+v0x7f811bd1f840_0 .net "out2", 7 0, L_0x7f811bd20990; 1 drivers
+v0x7f811bd1f900_0 .net "out3", 7 0, L_0x7f811bd20ab0; 1 drivers
+v0x7f811bd1fa00_0 .net "out4", 7 0, L_0x7f811bd20770; 1 drivers
+S_0x7f811bd0ba50 .scope module, "sort" "sort" 2 5, 3 3, S_0x7f811bd0a5d0;
+ .timescale 0 0;
+v0x7f811bd1eac0_0 .net "a1", 7 0, L_0x7f811bd1fb50; 1 drivers
+v0x7f811bd1eb80_0 .net "a2", 7 0, L_0x7f811bd1fdb0; 1 drivers
+v0x7f811bd1ec40_0 .net "a3", 7 0, L_0x7f811bd1fed0; 1 drivers
+v0x7f811bd1ed00_0 .net "a4", 7 0, L_0x7f811bd200f0; 1 drivers
+v0x7f811bd1edc0_0 .net "b2", 7 0, L_0x7f811bd20650; 1 drivers
+v0x7f811bd1eeb0_0 .net "b3", 7 0, L_0x7f811bd20430; 1 drivers
+v0x7f811bd1ef70_0 .net "in1", 7 0, v0x7f811bd1f4d0_0; 1 drivers
+v0x7f811bd1f030_0 .net "in2", 7 0, v0x7f811bd1f550_0; 1 drivers
+v0x7f811bd1f0b0_0 .net "in3", 7 0, v0x7f811bd1f5d0_0; 1 drivers
+v0x7f811bd1f180_0 .net "in4", 7 0, v0x7f811bd1f690_0; 1 drivers
+v0x7f811bd1f200_0 .alias "out1", 7 0, v0x7f811bd1f750_0;
+v0x7f811bd1f2e0_0 .alias "out2", 7 0, v0x7f811bd1f840_0;
+v0x7f811bd1f360_0 .alias "out3", 7 0, v0x7f811bd1f900_0;
+v0x7f811bd1f450_0 .alias "out4", 7 0, v0x7f811bd1fa00_0;
+S_0x7f811bd1e650 .scope module, "swape11" "swape" 3 11, 4 3, S_0x7f811bd0ba50;
+ .timescale 0 0;
+v0x7f811bd1e730_0 .net *"_s0", 0 0, L_0x7f811bd1fac0; 1 drivers
+v0x7f811bd1e7b0_0 .net *"_s4", 0 0, L_0x7f811bd1fd20; 1 drivers
+v0x7f811bd1e840_0 .alias "in1", 7 0, v0x7f811bd1ef70_0;
+v0x7f811bd1e8e0_0 .alias "in2", 7 0, v0x7f811bd1f030_0;
+v0x7f811bd1e970_0 .alias "out1", 7 0, v0x7f811bd1eac0_0;
+v0x7f811bd1ea20_0 .alias "out2", 7 0, v0x7f811bd1eb80_0;
+L_0x7f811bd1fac0 .cmp/gt 8, v0x7f811bd1f550_0, v0x7f811bd1f4d0_0;
+L_0x7f811bd1fb50 .functor MUXZ 8, v0x7f811bd1f550_0, v0x7f811bd1f4d0_0, L_0x7f811bd1fac0, C4<>;
+L_0x7f811bd1fd20 .cmp/ge 8, v0x7f811bd1f4d0_0, v0x7f811bd1f550_0;
+L_0x7f811bd1fdb0 .functor MUXZ 8, v0x7f811bd1f550_0, v0x7f811bd1f4d0_0, L_0x7f811bd1fd20, C4<>;
+S_0x7f811bd1e1d0 .scope module, "swape12" "swape" 3 17, 4 3, S_0x7f811bd0ba50;
+ .timescale 0 0;
+v0x7f811bd1e2b0_0 .net *"_s0", 0 0, L_0x7f811bd1fe40; 1 drivers
+v0x7f811bd1e340_0 .net *"_s4", 0 0, L_0x7f811bd20060; 1 drivers
+v0x7f811bd1e3d0_0 .alias "in1", 7 0, v0x7f811bd1f0b0_0;
+v0x7f811bd1e470_0 .alias "in2", 7 0, v0x7f811bd1f180_0;
+v0x7f811bd1e500_0 .alias "out1", 7 0, v0x7f811bd1ec40_0;
+v0x7f811bd1e5b0_0 .alias "out2", 7 0, v0x7f811bd1ed00_0;
+L_0x7f811bd1fe40 .cmp/gt 8, v0x7f811bd1f690_0, v0x7f811bd1f5d0_0;
+L_0x7f811bd1fed0 .functor MUXZ 8, v0x7f811bd1f690_0, v0x7f811bd1f5d0_0, L_0x7f811bd1fe40, C4<>;
+L_0x7f811bd20060 .cmp/ge 8, v0x7f811bd1f5d0_0, v0x7f811bd1f690_0;
+L_0x7f811bd200f0 .functor MUXZ 8, v0x7f811bd1f690_0, v0x7f811bd1f5d0_0, L_0x7f811bd20060, C4<>;
+S_0x7f811bd1dd50 .scope module, "swape21" "swape" 3 24, 4 3, S_0x7f811bd0ba50;
+ .timescale 0 0;
+v0x7f811bd1de30_0 .net *"_s0", 0 0, L_0x7f811bd20180; 1 drivers
+v0x7f811bd1ded0_0 .net *"_s4", 0 0, L_0x7f811bd203a0; 1 drivers
+v0x7f811bd1df60_0 .alias "in1", 7 0, v0x7f811bd1eac0_0;
+v0x7f811bd1e000_0 .alias "in2", 7 0, v0x7f811bd1ec40_0;
+v0x7f811bd1e090_0 .alias "out1", 7 0, v0x7f811bd1f750_0;
+v0x7f811bd1e150_0 .alias "out2", 7 0, v0x7f811bd1eeb0_0;
+L_0x7f811bd20180 .cmp/gt 8, L_0x7f811bd1fed0, L_0x7f811bd1fb50;
+L_0x7f811bd20310 .functor MUXZ 8, L_0x7f811bd1fed0, L_0x7f811bd1fb50, L_0x7f811bd20180, C4<>;
+L_0x7f811bd203a0 .cmp/ge 8, L_0x7f811bd1fb50, L_0x7f811bd1fed0;
+L_0x7f811bd20430 .functor MUXZ 8, L_0x7f811bd1fed0, L_0x7f811bd1fb50, L_0x7f811bd203a0, C4<>;
+S_0x7f811bd1d900 .scope module, "swape22" "swape" 3 30, 4 3, S_0x7f811bd0ba50;
+ .timescale 0 0;
+v0x7f811bd1d9e0_0 .net *"_s0", 0 0, L_0x7f811bd204c0; 1 drivers
+v0x7f811bd1da80_0 .net *"_s4", 0 0, L_0x7f811bd206e0; 1 drivers
+v0x7f811bd1db10_0 .alias "in1", 7 0, v0x7f811bd1eb80_0;
+v0x7f811bd1db90_0 .alias "in2", 7 0, v0x7f811bd1ed00_0;
+v0x7f811bd1dc20_0 .alias "out1", 7 0, v0x7f811bd1edc0_0;
+v0x7f811bd1dcd0_0 .alias "out2", 7 0, v0x7f811bd1fa00_0;
+L_0x7f811bd204c0 .cmp/gt 8, L_0x7f811bd200f0, L_0x7f811bd1fdb0;
+L_0x7f811bd20650 .functor MUXZ 8, L_0x7f811bd200f0, L_0x7f811bd1fdb0, L_0x7f811bd204c0, C4<>;
+L_0x7f811bd206e0 .cmp/ge 8, L_0x7f811bd1fdb0, L_0x7f811bd200f0;
+L_0x7f811bd20770 .functor MUXZ 8, L_0x7f811bd200f0, L_0x7f811bd1fdb0, L_0x7f811bd206e0, C4<>;
+S_0x7f811bd0b390 .scope module, "swape3" "swape" 3 37, 4 3, S_0x7f811bd0ba50;
+ .timescale 0 0;
+v0x7f811bd09810_0 .net *"_s0", 0 0, L_0x7f811bd20800; 1 drivers
+v0x7f811bd1d610_0 .net *"_s4", 0 0, L_0x7f811bd20a20; 1 drivers
+v0x7f811bd1d6a0_0 .alias "in1", 7 0, v0x7f811bd1edc0_0;
+v0x7f811bd1d720_0 .alias "in2", 7 0, v0x7f811bd1eeb0_0;
+v0x7f811bd1d7b0_0 .alias "out1", 7 0, v0x7f811bd1f840_0;
+v0x7f811bd1d870_0 .alias "out2", 7 0, v0x7f811bd1f900_0;
+L_0x7f811bd20800 .cmp/gt 8, L_0x7f811bd20430, L_0x7f811bd20650;
+L_0x7f811bd20990 .functor MUXZ 8, L_0x7f811bd20430, L_0x7f811bd20650, L_0x7f811bd20800, C4<>;
+L_0x7f811bd20a20 .cmp/ge 8, L_0x7f811bd20650, L_0x7f811bd20430;
+L_0x7f811bd20ab0 .functor MUXZ 8, L_0x7f811bd20430, L_0x7f811bd20650, L_0x7f811bd20a20, C4<>;
+    .scope S_0x7f811bd0a5d0;
+T_0 ;
+    %vpi_call 2 18 "$dumpfile", "simple.vcd";
+    %vpi_call 2 19 "$dumpvars";
+    %vpi_call 2 20 "$monitor", "o1 = %d,o2 = %d", v0x7f811bd1f750_0, v0x7f811bd1f840_0;
+    %delay 50, 0;
+    %movi 8, 13, 8;
+    %set/v v0x7f811bd1f4d0_0, 8, 8;
+    %movi 8, 1, 8;
+    %set/v v0x7f811bd1f550_0, 8, 8;
+    %movi 8, 23, 8;
+    %set/v v0x7f811bd1f5d0_0, 8, 8;
+    %movi 8, 10, 8;
+    %set/v v0x7f811bd1f690_0, 8, 8;
+    %vpi_call 2 22 "$monitor", "o1 = %d,o2 = %d,o3= %d,o4 = %d", v0x7f811bd1f750_0, v0x7f811bd1f840_0, v0x7f811bd1f900_0, v0x7f811bd1fa00_0;
+    %delay 50, 0;
+    %vpi_call 2 23 "$finish";
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 5;
+    "N/A";
+    "<interactive>";
+    "simple_tb.v";
+    "sort.v";
+    "swape.v";

@@ -1,0 +1,155 @@
+$date
+	Sun Oct 26 18:53:57 2014
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module simple_tb $end
+$var wire 8 ! out1 [7:0] $end
+$var wire 8 " out2 [7:0] $end
+$var wire 8 # out3 [7:0] $end
+$var wire 8 $ out4 [7:0] $end
+$var reg 8 % in1 [7:0] $end
+$var reg 8 & in2 [7:0] $end
+$var reg 8 ' in3 [7:0] $end
+$var reg 8 ( in4 [7:0] $end
+$scope module sort $end
+$var wire 8 ) a1 [7:0] $end
+$var wire 8 * a2 [7:0] $end
+$var wire 8 + a3 [7:0] $end
+$var wire 8 , a4 [7:0] $end
+$var wire 8 - b2 [7:0] $end
+$var wire 8 . b3 [7:0] $end
+$var wire 8 / in1 [7:0] $end
+$var wire 8 0 in2 [7:0] $end
+$var wire 8 1 in3 [7:0] $end
+$var wire 8 2 in4 [7:0] $end
+$var wire 8 3 out1 [7:0] $end
+$var wire 8 4 out2 [7:0] $end
+$var wire 8 5 out3 [7:0] $end
+$var wire 8 6 out4 [7:0] $end
+$scope module swape11 $end
+$var wire 8 7 in1 [7:0] $end
+$var wire 8 8 in2 [7:0] $end
+$var wire 8 9 out1 [7:0] $end
+$var wire 8 : out2 [7:0] $end
+$upscope $end
+$scope module swape12 $end
+$var wire 8 ; in1 [7:0] $end
+$var wire 8 < in2 [7:0] $end
+$var wire 8 = out1 [7:0] $end
+$var wire 8 > out2 [7:0] $end
+$upscope $end
+$scope module swape21 $end
+$var wire 8 ? in1 [7:0] $end
+$var wire 8 @ in2 [7:0] $end
+$var wire 8 A out1 [7:0] $end
+$var wire 8 B out2 [7:0] $end
+$upscope $end
+$scope module swape22 $end
+$var wire 8 C in1 [7:0] $end
+$var wire 8 D in2 [7:0] $end
+$var wire 8 E out1 [7:0] $end
+$var wire 8 F out2 [7:0] $end
+$upscope $end
+$scope module swape3 $end
+$var wire 8 G in1 [7:0] $end
+$var wire 8 H in2 [7:0] $end
+$var wire 8 I out1 [7:0] $end
+$var wire 8 J out2 [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx J
+bx I
+bx H
+bx G
+bx F
+bx E
+bx D
+bx C
+bx B
+bx A
+bx @
+bx ?
+bx >
+bx =
+bx <
+bx ;
+bx :
+bx 9
+bx 8
+bx 7
+bx 6
+bx 5
+bx 4
+bx 3
+bx 2
+bx 1
+bx 0
+bx /
+bx .
+bx -
+bx ,
+bx +
+bx *
+bx )
+bx (
+bx '
+bx &
+bx %
+bx $
+bx #
+bx "
+bx !
+$end
+#50
+b1010 "
+b1010 4
+b1010 I
+b1101 #
+b1101 5
+b1101 J
+b1 !
+b1 3
+b1 A
+b1010 .
+b1010 B
+b1010 H
+b1101 -
+b1101 E
+b1101 G
+b10111 $
+b10111 6
+b10111 F
+b1010 +
+b1010 =
+b1010 @
+b10111 ,
+b10111 >
+b10111 D
+b1 )
+b1 9
+b1 ?
+b1101 *
+b1101 :
+b1101 C
+b1010 (
+b1010 2
+b1010 <
+b10111 '
+b10111 1
+b10111 ;
+b1 &
+b1 0
+b1 8
+b1101 %
+b1101 /
+b1101 7
+#100
